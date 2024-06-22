@@ -1,10 +1,27 @@
-# A "TextNode" is sort of an intermediate representation between Markdown and HTML, and is specific to inline markup.
-# Normal text, Bold, Italic, Code, Links, Images
 from leafnode import LeafNode
 from enum import Enum
 
 
 class TextNode:
+    """
+    A "TextNode" is sort of an intermediate representation between
+    Markdown and HTML, and is specific to inline markup.
+    It includes Normal text, Bold, Italic, Code, Links and Images.
+
+    Attributes
+    ----------
+    text : str
+        a string
+    text_type : str
+        blabla
+    url : str
+        blabla
+
+    Methods
+    -------
+
+    """
+
     def __init__(self, text, text_type, url=None):
         self.text = text
         self.text_type = text_type

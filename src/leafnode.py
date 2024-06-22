@@ -3,6 +3,25 @@ from htmlnode import HTMLNode
 
 
 class LeafNode(HTMLNode):
+    """
+    A "TextNode" is sort of an intermediate representation between
+    Markdown and HTML, and is specific to inline markup.
+    It includes Normal text, Bold, Italic, Code, Links and Images.
+
+    Attributes
+    ----------
+    text : str
+        a string
+    text_type : str
+        blabla
+    url : str
+        blabla
+
+    Methods
+    -------
+
+    """
+
     def __init__(self, tag, value, props=None):
         super().__init__(tag=tag, value=value, children=None, props=props)
 
